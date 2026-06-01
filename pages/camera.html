@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;background:#fff0f5">
+
+<h2>📸 Camera</h2>
+<video id="video" autoplay></video>
+<br>
+<button onclick="snap()">Capture</button>
+<canvas id="canvas"></canvas>
+
+<script>
+navigator.mediaDevices.getUserMedia({ video: true })
+.then(stream => {
+  document.getElementById('video').srcObject = stream;
+});
+
+function snap() {
+  let canvas = document.getElementById('canvas');
+  let video = document.getElementById('video');
+  canvas.getContext('2d').drawImage(video, 0, 0, 300, 200);
+  alert("Ohh that's a princess 💖");
+}
+</script>
+
+</body>
+</html>
