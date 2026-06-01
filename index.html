@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🎥 Background Video -->
+<video autoplay muted loop id="bg-video">
+  <source src="assets/bg.mp4" type="video/mp4">
+</video>
+
+<!-- 🎵 Music -->
+<audio id="music" autoplay loop>
+  <source src="assets/music.mp3" type="audio/mp3">
+</audio>
+
+<!-- 🔐 PAGE 1 -->
+<div id="page1" class="page active">
+  <img src="assets/penguin.png" class="penguin">
+  <h2>Enter Password 💌</h2>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">Enter</button>
+</div>
+
+<!-- 🎂 PAGE 2 -->
+<div id="page2" class="page">
+  <img src="assets/penguin.png" class="penguin small">
+  <div class="cake-area">
+    <img src="assets/cake.png" id="cake">
+    <div class="flame" id="flame"></div>
+  </div>
+  <button onclick="blowCandles()">Blow 🎂</button>
+</div>
+
+<!-- 🎉 PAGE 3 -->
+<div id="page3" class="page">
+  <h1 class="wish">Happy Birthday Princess 💖✨</h1>
+</div>
+
+<!-- 🎁 PAGE 4 -->
+<div id="page4" class="page">
+  <button onclick="openPage('pages/camera.html')">📸</button>
+  <button onclick="openPage('pages/letter.html')">💌</button>
+  <button onclick="openPage('pages/video.html')">⭐</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
