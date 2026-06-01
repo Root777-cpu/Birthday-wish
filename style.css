@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  overflow: hidden;
+  background: #fff0f5;
+}
+
+/* 🎥 Video */
+#bg-video {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Pages */
+.page {
+  display: none;
+  height: 100vh;
+  text-align: center;
+  color: #ff69b4;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Penguin */
+.penguin {
+  width: 220px;
+  margin-top: 50px;
+}
+
+.small {
+  width: 150px;
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #ffb6c1;
+  color: white;
+  font-size: 16px;
+}
+
+/* Cake */
+.cake-area {
+  position: relative;
+}
+
+#cake {
+  width: 200px;
+}
+
+/* 🔥 Flame animation */
+.flame {
+  width: 10px;
+  height: 20px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  animation: flicker 0.2s infinite;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* 🎉 Wish Animation */
+.wish {
+  margin-top: 40%;
+  font-size: 2.5em;
+  animation: pop 2s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
